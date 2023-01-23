@@ -6,47 +6,57 @@ const Add = () => {
       <h5 className=" py-4">Add New Product</h5>
       </div>
       <div className="container">
-        <form>
-              <div className="form-group row my-3">
+        <form method="post"> 
+          <div className="row">
+              <div className="col my-3">
                 <label><b>Product Name:</b></label>
-                <div className="col-sm-6">
+                <div>
                 <input className="form-control" type="text" />
                 </div>
               </div>
 
-              <div className="form-group row my-3">
-                <label><b>Extingusher Type:</b></label>
-                <div className="col-sm-6">
-                <input className="form-control" type="text" />
-                </div>
-              </div>
-
-              <div className="form-group row my-3">
-                <label><b>Extingusher Capacity:</b></label>
-                <div className="col-sm-6">
-                <input className="form-control" type="text" />
-                </div>
-              </div>
-
-              <div className="form-group row my-3">
+              <div className="col my-3">
                 <label><b>Manufactured Date:</b></label>
-                <div className="col-sm-6">
+                <div>
                 <input className="form-control" type="date" />
                 </div>
               </div>
+          </div>
 
-              <div className="form-group row my-3">
+        <div className="row">
+           <div className="col my-3">
+                <label><b>Extingusher Type:</b></label>
+                <div>
+                <input className="form-control" type="text" />
+                </div>
+           </div>
+           <div className="col my-3">
                 <label><b>Extingusher Next Due Date:</b></label>
-                <div className="col-sm-6">
+                <div>
                 <input className="form-control" type="date" />
                 </div>
               </div>
-              <div className="form-group row my-3">
+        </div>
+
+        <div className="row">
+
+              <div className="col my-3">
+                <label><b>Extingusher Capacity:</b></label>
+                <div>
+                <input className="form-control" type="text" />
+                </div>
+              </div> 
+              <div className="col my-3">
                 <label><b>Remark:</b></label>
-                <div className="col-sm-6">
-                <textarea  className="col-sm-6" ></textarea>
+                <div>
+                <textarea className="w-100"></textarea>
                 </div>
               </div>
+        </div>
+         
+        <div className="text-center my-2">
+                <button type='submit' className="btn btn-primary">Save Data</button>
+        </div>    
         </form>
       </div>
   </div>
