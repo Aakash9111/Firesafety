@@ -2,15 +2,16 @@ import React from "react";
 const Add = () => {
   return (
   <div className="contianer">
-      <div className="row mx-5">
-      <h5 className="col py-4">Add New Product</h5>
-      <form className="row py-4 col-sm-4">
-      <div class="input-group">
-      <input type="file" class="form-control" />
-      <button class="btn btn-primary" type="button" >Import</button>
-    </div>
-      </form>
-      </div>
+      <header className="row mx-5">
+        <h5 className="col py-4">Add New Product</h5>
+        <form className="row py-4 col-sm-4">
+        <div class="input-group">
+        <input type="file" accept=".csv" class="form-control" />
+        <button class="btn btn-primary" type="button" >Import</button>
+        </div>
+        </form>
+      </header>
+     
       <div className="container">
         <form method="post"> 
           <div className="row">
@@ -64,6 +65,7 @@ const Add = () => {
         </div>    
         </form>
       </div>
+
   </div>
   );
 };

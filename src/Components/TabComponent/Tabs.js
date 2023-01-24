@@ -20,7 +20,7 @@ const Tabs = () => {
   
   return (
   <div>
-  <ul className="mt-2 ml-4 border border-grey nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <ul className="px-2 mt-2 ml-4 border border-grey nav nav-pills mb-3" id="pills-tab" role="tablist">
   <li className="mt-2 nav-item" role="presentation">
     <button onClick={handleTab1} className="border border-grey nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Dashboard</button>
   </li>
@@ -34,7 +34,7 @@ const Tabs = () => {
     <button onClick={handleTab4} className="border border-grey nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Inspection</button>
   </li>
 </ul>
-<div className="border border-grey tab-content" id="pills-tabContent">
+<div className="tab-content" id="pills-tabContent">
     {(() => {
         switch (activeTab) {	
           case "Dashboard":   return <></>;

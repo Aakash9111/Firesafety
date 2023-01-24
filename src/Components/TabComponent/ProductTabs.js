@@ -10,7 +10,7 @@ const ProductTabs = () => {
 
   return (
     <div className="mx-4">
-    <ul className=" border border-grey nav nav-pills" id="pills-tab" role="tablist">
+    <ul className="px-2 border border-grey nav nav-pills" id="pills-tab" role="tablist">
   <li className="mt-2 nav-item" role="presentation">
     <button onClick={handleTab1} className="border border-grey nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Product List</button>
   </li>
